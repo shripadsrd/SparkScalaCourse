@@ -17,7 +17,6 @@ object FriendsByAge {
     // Create a SparkContext using every core of the local machine
     val sc = new SparkContext("local[*]", "FriendsByAge")
 
-    val fileLocation = "/Users/shripaddeshpande/SparkScala/fakefriends.csv"
     val sesh = SparkSession
       .builder()
       .appName("FriendsByAge")
